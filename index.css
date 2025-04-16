@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor adaptable */
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Menú más junto y centrado */
+.menu {
+    background-color: #0047AB;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Espaciado entre opciones */
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Texto principal */
+head1 {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    margin-top: 20px;
+}
+
+/* Texto "OPCIONES" en azul */
+head3 {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
+}
+
+/* Botones de ejemplo y enviar */
+.label,
+.enviar {
+    display: inline-block;
+    margin: 10px;
+}
+
+.label input,
+.enviar input {
+    background-color: #0047AB; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    border: 2px solid #0047AB; /* Borde azul */
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.label input:hover,
+.enviar input:hover {
+    background-color: #002f6c; /* Azul más oscuro */
+    transform: scale(1.05); /* Efecto de crecimiento */
+}
+
+/* Imagen */
+.imagen img {
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Footer con línea divisora */
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 2px solid black;
+}
+
+/* Enlace con tu nombre */
+#link a {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Ajuste para pantallas pequeñas y zoom */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column; /* Cambia a menú vertical */
+        text-align: center;
+    }
+
+    .menu ul li {
+        padding: 5px 0;
+    }
+
+    .label,
+    .enviar {
+        display: block; /* Botones en columna en pantallas pequeñas */
+        margin: 10px auto;
+    }
+}
+
+/* Mejora para cuando se hace zoom */
+@media (min-width: 1500px) {
+    .menu ul {
+        gap: 30px; /* Aumenta la separación en pantallas grandes */
+    }
+}
